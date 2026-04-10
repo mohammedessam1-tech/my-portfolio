@@ -1714,35 +1714,32 @@
                 Send a Message
               </h3>
 
-              <form id="contact-form" class="space-y-5" novalidate>
+              <form action="https://formsubmit.co/mohammedessam.web_growth@zohomail.com" method="POST" class="space-y-5">
                 <div class="grid sm:grid-cols-2 gap-5">
                   <div class="form-group">
                     <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Your Name *</label>
-                    <input type="text" name="name" id="inp-name" required
+                    <input type="text" name="name" required
                            class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20"
                            placeholder="Mohammed..." />
-                    <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
                   </div>
                   <div class="form-group">
                     <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Email Address *</label>
-                    <input type="email" name="email" id="inp-email" required
+                    <input type="email" name="email" required
                            class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20"
                            placeholder="you@example.com" />
-                    <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Subject *</label>
-                  <input type="text" name="subject" id="inp-subject" required
+                  <input type="text" name="subject" required
                          class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20"
                          placeholder="Project Inquiry..." />
-                  <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
                 </div>
 
                 <div class="form-group">
                   <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Service Interested In</label>
-                  <select name="service" id="inp-service"
+                  <select name="service"
                           class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200">
                     <option value="">Select a service...</option>
                     <option value="shopify">Shopify Store</option>
@@ -1758,24 +1755,24 @@
 
                 <div class="form-group">
                   <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Your Message *</label>
-                  <textarea name="message" id="inp-message" required rows="5"
+                  <textarea name="message" required rows="5"
                             class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20 resize-none"
                             placeholder="Tell me about your project..."></textarea>
-                  <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
                 </div>
 
+                <!-- Redirect after submission -->
+                <input type="hidden" name="_next" value="https://mohammedessam1-tech.github.io/my-portfolio/#contact">
+                <input type="hidden" name="_captcha" value="false">
+
                 <!-- Submit button -->
-                <button type="submit" id="submit-btn"
+                <button type="submit"
                         class="w-full group relative flex items-center justify-center gap-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200 overflow-hidden">
-                  <span id="btn-text" class="relative z-10 flex items-center gap-3">
+                  <span class="relative z-10 flex items-center gap-3">
                     <i class="fas fa-paper-plane"></i>
                     Send Message
                   </span>
                   <div class="absolute inset-0 bg-brutal-orange opacity-0 group-hover:opacity-20 transition-opacity duration-200"></div>
                 </button>
-
-                <!-- Success/Error message -->
-                <div id="form-status" class="hidden font-mono text-sm text-center py-3 border-2"></div>
               </form>
             </div>
           </div>
