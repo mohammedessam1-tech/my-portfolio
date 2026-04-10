@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Essam — Digital Operations & Growth Specialist</title>
+  <meta name="description" content="Mohammed Essam — Digital Operations & Growth Specialist, Web Developer, E-commerce & AI Solutions. Based in Giza, Egypt." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            grotesk: ['Space Grotesk', 'sans-serif'],
+            mono: ['Space Mono', 'monospace'],
+          },
+          colors: {
+            brutal: {
+              yellow:  '#FFE600',
+              orange:  '#FF5C00',
+              pink:    '#FF2D78',
+              cyan:    '#00E5FF',
+              green:   '#00FF88',
+              purple:  '#7C3AED',
+              dark:    '#0A0A0A',
+              gray:    '#1A1A1A',
+              light:   '#F5F5F0',
+            }
+          },
+          boxShadow: {
+            brutal: '4px 4px 0 0 #0A0A0A',
+            'brutal-lg': '8px 8px 0 0 #0A0A0A',
+            'brutal-xl': '12px 12px 0 0 #0A0A0A',
+            'brutal-yellow': '6px 6px 0 0 #FFE600',
+            'brutal-pink': '6px 6px 0 0 #FF2D78',
+            'brutal-cyan': '6px 6px 0 0 #00E5FF',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-grotesk bg-brutal-dark text-brutal-light overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════════ NAVIGATION ═══ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#hero" class="font-mono font-bold text-lg md:text-xl text-brutal-yellow hover:text-brutal-orange transition-colors duration-200 brutal-glitch" data-text="ME">
+          <span class="border-2 border-brutal-yellow px-3 py-1 hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200">ME</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex items-center gap-1 font-mono text-sm font-bold uppercase tracking-wider">
+          <li><a href="#about"      class="nav-link px-3 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">About</a></li>
+          <li><a href="#experience"  class="nav-link px-3 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Experience</a></li>
+          <li><a href="#portfolio"  class="nav-link px-3 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Works</a></li>
+          <li><a href="#skills"   class="nav-link px-3 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Skills</a></li>
+          <li><a href="#upcoming" class="nav-link px-3 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Coming Soon</a></li>
+          <li><a href="#contact"  class="nav-link ml-4 px-5 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-yellow hover:bg-transparent hover:text-brutal-yellow transition-all duration-200">Contact</a></li>
+        </ul>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden text-brutal-yellow p-2 border-2 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200" aria-label="Toggle menu">
+          <i class="fas fa-bars text-xl" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-brutal-gray border-t-4 border-brutal-yellow">
+      <ul class="flex flex-col font-mono text-sm font-bold uppercase tracking-wider px-4 py-4 gap-2">
+        <li><a href="#about"       class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">About</a></li>
+        <li><a href="#experience"   class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Experience</a></li>
+        <li><a href="#portfolio"    class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Works</a></li>
+        <li><a href="#skills"      class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Skills</a></li>
+        <li><a href="#upcoming"    class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Coming Soon</a></li>
+        <li><a href="#education"   class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200">Credentials</a></li>
+        <li><a href="#contact"     class="mobile-nav-link block px-3 py-3 bg-brutal-yellow text-brutal-dark hover:bg-brutal-orange transition-all duration-200 text-center">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO ═══ -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-brutal-dark">
+
+    <!-- Abstract animated background canvas -->
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full opacity-60"></canvas>
+
+    <!-- Decorative brutalist shapes -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="shape-float absolute top-20 left-6 w-24 h-24 md:w-40 md:h-40 border-4 border-brutal-yellow opacity-40 rotate-12"></div>
+      <div class="shape-float-slow absolute bottom-32 right-8 w-20 h-20 md:w-32 md:h-32 bg-brutal-pink opacity-20 -rotate-6"></div>
+      <div class="shape-float absolute top-1/3 right-12 md:right-24 w-16 h-16 md:w-24 md:h-24 border-4 border-brutal-cyan opacity-50 rotate-45"></div>
+      <div class="shape-float-slow absolute bottom-1/4 left-16 w-12 h-12 md:w-20 md:h-20 bg-brutal-green opacity-15 rotate-12"></div>
+      <div class="absolute top-1/2 left-1/4 w-3 h-3 bg-brutal-yellow rounded-full opacity-80 pulse-dot"></div>
+      <div class="absolute top-1/4 right-1/3 w-2 h-2 bg-brutal-pink rounded-full opacity-80 pulse-dot" style="animation-delay:0.8s"></div>
+      <div class="absolute bottom-1/3 right-1/4 w-4 h-4 bg-brutal-cyan rounded-full opacity-60 pulse-dot" style="animation-delay:1.4s"></div>
+
+      <!-- Big background text -->
+      <div class="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none select-none">
+        <p class="font-mono font-bold text-[8vw] md:text-[10vw] text-white opacity-[0.03] whitespace-nowrap leading-none uppercase tracking-widest marquee-text">
+          DEVELOPER · CREATOR · INNOVATOR · MARKETER · DEVELOPER · CREATOR · INNOVATOR ·
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left: Text -->
+        <div class="text-left">
+          <!-- Badge -->
+          <div class="reveal-up inline-flex items-center gap-2 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs uppercase tracking-widest px-4 py-2 mb-6 border-2 border-brutal-dark shadow-brutal">
+            <span class="w-2 h-2 bg-brutal-dark rounded-full animate-pulse"></span>
+            Available for Projects
+          </div>
+
+          <!-- Name -->
+          <h1 class="reveal-up font-mono font-bold leading-none mb-4" style="animation-delay:0.15s">
+            <span class="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-brutal-light tracking-tight">MOHAMMED</span>
+            <span class="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-brutal-yellow tracking-tight mt-1 hero-name-stroke">ESSAM</span>
+          </h1>
+
+          <!-- Subtitle with stagger -->
+          <div class="reveal-up mt-6 mb-8" style="animation-delay:0.3s">
+            <p class="text-brutal-light/70 text-sm md:text-base font-grotesk leading-relaxed max-w-lg">
+              <span class="text-brutal-cyan font-bold">Digital Operations & Growth Specialist</span>
+              <span class="text-brutal-light/40 mx-2">|</span>
+              <span class="text-brutal-orange font-bold">Web Developer</span>
+              <span class="text-brutal-light/40 mx-2">|</span>
+              <span class="text-brutal-green font-bold">E-commerce & AI Solutions</span>
+            </p>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="reveal-up flex flex-wrap gap-4" style="animation-delay:0.45s">
+            <a href="https://linktr.ee/Mohammed_Essam1" target="_blank" rel="noopener noreferrer"
+               class="cta-btn group relative inline-flex items-center gap-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-sm uppercase tracking-widest px-7 py-4 border-4 border-brutal-dark shadow-brutal-lg hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-xl transition-all duration-200">
+              <i class="fas fa-external-link-alt"></i>
+              View Portfolio
+              <span class="absolute inset-0 bg-brutal-orange opacity-0 group-hover:opacity-10 transition-opacity duration-200"></span>
+            </a>
+            <a href="#contact"
+               class="cta-btn inline-flex items-center gap-3 bg-transparent text-brutal-yellow font-mono font-bold text-sm uppercase tracking-widest px-7 py-4 border-4 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark hover:-translate-y-1 hover:-translate-x-1 transition-all duration-200">
+              <i class="fas fa-paper-plane"></i>
+              Hire Me
+            </a>
+          </div>
+
+          <!-- Social Icons Row -->
+          <div class="reveal-up flex items-center gap-3 mt-8" style="animation-delay:0.55s">
+            <span class="font-mono text-xs text-brutal-light/30 uppercase tracking-widest hidden sm:block">Follow:</span>
+            <a href="https://www.linkedin.com/in/mohammed-essam-younis/" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-[#0A66C2] hover:text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-all duration-200" title="LinkedIn">
+              <i class="fab fa-linkedin-in text-sm"></i>
+            </a>
+            <a href="https://www.facebook.com/MohammedEssam.WebGrowth" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-[#1877F2] hover:text-[#1877F2] hover:bg-[#1877F2]/10 transition-all duration-200" title="Facebook">
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a href="https://www.instagram.com/mohammedessam_webgrowth" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-[#E1306C] hover:text-[#E1306C] hover:bg-[#E1306C]/10 transition-all duration-200" title="Instagram">
+              <i class="fab fa-instagram text-sm"></i>
+            </a>
+            <a href="https://www.youtube.com/@MohammedEssamWebGrowth" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-[#FF0000] hover:text-[#FF0000] hover:bg-[#FF0000]/10 transition-all duration-200" title="YouTube">
+              <i class="fab fa-youtube text-sm"></i>
+            </a>
+            <a href="https://github.com/mohammedessam1-tech" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-brutal-light hover:text-brutal-light hover:bg-brutal-light/10 transition-all duration-200" title="GitHub">
+              <i class="fab fa-github text-sm"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mohammedessam.web_growth" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-brutal-light hover:text-brutal-light hover:bg-brutal-light/10 transition-all duration-200" title="TikTok">
+              <i class="fab fa-tiktok text-sm"></i>
+            </a>
+            <a href="https://wa.me/201018923563" target="_blank" rel="noopener noreferrer"
+               class="social-icon-btn w-9 h-9 border-2 border-brutal-light/20 bg-brutal-gray flex items-center justify-center text-brutal-light/50 hover:border-brutal-green hover:text-brutal-green hover:bg-brutal-green/10 transition-all duration-200" title="WhatsApp">
+              <i class="fab fa-whatsapp text-sm"></i>
+            </a>
+          </div>
+
+          <!-- Stats row -->
+          <div class="reveal-up flex flex-wrap gap-6 mt-8 pt-8 border-t-2 border-brutal-light/10" style="animation-delay:0.6s">
+            <div class="stat-item">
+              <span class="block font-mono font-bold text-3xl text-brutal-yellow">16+</span>
+              <span class="block text-brutal-light/50 text-xs uppercase tracking-wider font-mono">Projects Built</span>
+            </div>
+            <div class="w-px bg-brutal-light/10"></div>
+            <div class="stat-item">
+              <span class="block font-mono font-bold text-3xl text-brutal-cyan">5+</span>
+              <span class="block text-brutal-light/50 text-xs uppercase tracking-wider font-mono">Years Experience</span>
+            </div>
+            <div class="w-px bg-brutal-light/10"></div>
+            <div class="stat-item">
+              <span class="block font-mono font-bold text-3xl text-brutal-green">100%</span>
+              <span class="block text-brutal-light/50 text-xs uppercase tracking-wider font-mono">Client Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Photo Block -->
+        <div class="hidden md:flex items-center justify-center">
+          <div class="reveal-right relative" style="animation-delay:0.3s">
+            <!-- Deep offset shadow layers -->
+            <div class="absolute -bottom-5 -right-5 w-full h-full bg-brutal-yellow border-4 border-brutal-dark z-0"></div>
+            <div class="absolute -bottom-2 -right-2 w-full h-full bg-brutal-pink border-4 border-brutal-dark z-0"></div>
+            <!-- Photo frame -->
+            <div class="relative border-4 border-brutal-light z-10 overflow-hidden photo-frame-hero" style="width:310px; height:420px;">
+              <img src="images/profile2.jpg"
+                   alt="Mohammed Essam — Digital Operations & Growth Specialist"
+                   class="w-full h-full object-cover block"
+                   style="object-position: center 5%;"
+              />
+              <!-- Gradient overlay bottom -->
+              <div class="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-brutal-dark via-brutal-dark/70 to-transparent"></div>
+              <!-- Name tag -->
+              <div class="absolute bottom-0 left-0 right-0 px-5 py-4 z-10">
+                <p class="font-mono font-bold text-brutal-yellow text-base leading-tight">Mohammed Essam</p>
+                <p class="font-mono text-brutal-light/70 text-xs mt-1">Digital Growth & Web Dev 🇪🇬</p>
+              </div>
+            </div>
+            <!-- Top-left accent badge -->
+            <div class="absolute -top-3 -left-3 bg-brutal-yellow border-4 border-brutal-dark px-3 py-2 z-20">
+              <span class="font-mono font-bold text-brutal-dark text-xs uppercase tracking-widest">Cairo, Egypt 🇪🇬</span>
+            </div>
+            <!-- Bottom-right accent badge -->
+            <div class="absolute -bottom-3 -right-3 bg-brutal-cyan border-4 border-brutal-dark px-3 py-2 z-20">
+              <span class="font-mono font-bold text-brutal-dark text-xs uppercase tracking-widest flex items-center gap-2">
+                <span class="w-2 h-2 bg-brutal-dark rounded-full animate-pulse"></span>
+                Open to Work
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile: Photo strip (shows below stats) -->
+        <div class="md:hidden mt-8 flex justify-center">
+          <div class="relative w-48 h-56">
+            <div class="absolute -bottom-3 -right-3 w-full h-full bg-brutal-yellow border-4 border-brutal-dark z-0"></div>
+            <div class="relative border-4 border-brutal-light z-10 w-full h-full overflow-hidden">
+              <img src="images/profile2.jpg"
+                   alt="Mohammed Essam"
+                   class="w-full h-full object-cover"
+                   style="object-position: center 5%;"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity duration-200">
+      <span class="font-mono text-xs uppercase tracking-widest text-brutal-light/50">Scroll</span>
+      <div class="scroll-arrow w-6 h-10 border-2 border-brutal-yellow/50 rounded-full flex items-start justify-center pt-2">
+        <div class="w-1 h-3 bg-brutal-yellow rounded-full scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ ABOUT ME ═══ -->
+  <section id="about" class="relative py-24 md:py-32 bg-brutal-light overflow-hidden">
+    <!-- Brutalist accent -->
+    <div class="absolute top-0 left-0 w-full h-4 bg-brutal-yellow"></div>
+    <div class="absolute bottom-0 right-0 w-2/3 h-4 bg-brutal-dark"></div>
+
+    <!-- Background pattern -->
+    <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #0A0A0A 0, #0A0A0A 1px, transparent 0, transparent 50%); background-size: 20px 20px;"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="mb-16">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-yellow bg-brutal-dark px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">01</span>
+          <span class="font-mono font-bold text-brutal-dark/40 text-sm uppercase tracking-widest">// About</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl lg:text-7xl text-brutal-dark leading-none" style="animation-delay:0.1s">
+          WHO<br/><span class="text-brutal-orange">I AM</span>
+        </h2>
+        <!-- Decorative line -->
+        <div class="reveal-up mt-4 h-2 w-24 bg-brutal-dark" style="animation-delay:0.2s"></div>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-12 items-start">
+
+        <!-- Left: Large statement -->
+        <div class="lg:col-span-3">
+          <p class="reveal-up font-grotesk text-xl md:text-2xl text-brutal-dark leading-relaxed mb-6" style="animation-delay:0.2s">
+            I empower businesses to establish, optimize, and expand their
+            <span class="bg-brutal-yellow px-2 font-bold">online presence</span> through a strategic blend of
+            <span class="bg-brutal-orange text-brutal-light px-2 font-bold">marketing, operations</span>, and technical execution.
+          </p>
+          <p class="reveal-up font-grotesk text-base md:text-lg text-brutal-dark/70 leading-relaxed mb-8" style="animation-delay:0.3s">
+            My expertise spans <strong>social media management, website development, e-commerce solutions,</strong> and <strong>AI tool integration</strong>, enabling me to build robust systems that consistently deliver measurable results. From crafting compelling marketing materials and photoshoots to launching fully-operational stores, I bridge creative vision with technical execution.
+          </p>
+
+          <!-- Core Expertise bullets -->
+          <div class="reveal-up mb-8" style="animation-delay:0.35s">
+            <h3 class="font-mono font-bold text-brutal-dark text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+              <span class="w-4 h-4 bg-brutal-dark inline-block"></span> Core Expertise
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div class="flex items-center gap-2 font-grotesk text-sm text-brutal-dark/80">
+                <span class="w-2 h-2 bg-brutal-yellow flex-shrink-0"></span>Website Development & Conversion Optimization
+              </div>
+              <div class="flex items-center gap-2 font-grotesk text-sm text-brutal-dark/80">
+                <span class="w-2 h-2 bg-brutal-orange flex-shrink-0"></span>E-commerce Setup & Growth Strategy
+              </div>
+              <div class="flex items-center gap-2 font-grotesk text-sm text-brutal-dark/80">
+                <span class="w-2 h-2 bg-brutal-pink flex-shrink-0"></span>Social Media Management & Team Leadership
+              </div>
+              <div class="flex items-center gap-2 font-grotesk text-sm text-brutal-dark/80">
+                <span class="w-2 h-2 bg-brutal-cyan flex-shrink-0"></span>AI Tools & No-Code Automation
+              </div>
+              <div class="flex items-center gap-2 font-grotesk text-sm text-brutal-dark/80">
+                <span class="w-2 h-2 bg-brutal-green flex-shrink-0"></span>Content Creation & Creative Direction
+              </div>
+              <div class="flex items-center gap-2 font-grotesk text-sm text-brutal-dark/80">
+                <span class="w-2 h-2 bg-brutal-purple flex-shrink-0"></span>Operations & Workflow Management
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight grid -->
+          <div class="reveal-up grid grid-cols-2 gap-4" style="animation-delay:0.4s">
+            <div class="about-card group bg-brutal-dark text-brutal-light p-5 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200 cursor-default">
+              <i class="fas fa-store text-brutal-yellow text-2xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-sm uppercase tracking-wider">E-commerce<br/>Expert</p>
+            </div>
+            <div class="about-card group bg-brutal-yellow text-brutal-dark p-5 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200 cursor-default">
+              <i class="fas fa-robot text-brutal-dark text-2xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-sm uppercase tracking-wider">AI Tools<br/>Specialist</p>
+            </div>
+            <div class="about-card group bg-brutal-orange text-brutal-light p-5 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200 cursor-default">
+              <i class="fas fa-camera text-white text-2xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-sm uppercase tracking-wider">Marketing<br/>& Content</p>
+            </div>
+            <div class="about-card group bg-brutal-dark text-brutal-light p-5 border-4 border-brutal-yellow shadow-brutal-yellow hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200 cursor-default">
+              <i class="fas fa-code text-brutal-cyan text-2xl mb-3 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-sm uppercase tracking-wider">No-Code<br/>Development</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Info panel -->
+        <div class="lg:col-span-2">
+          <div class="reveal-right sticky top-24" style="animation-delay:0.3s">
+            <!-- Info card -->
+            <div class="relative bg-brutal-dark text-brutal-light border-4 border-brutal-dark shadow-brutal-lg p-6 mb-6">
+              <div class="absolute -top-3 -right-3 w-full h-full bg-brutal-yellow border-4 border-brutal-dark -z-10"></div>
+              <h3 class="font-mono font-bold text-brutal-yellow text-sm uppercase tracking-widest mb-5 border-b-2 border-brutal-light/10 pb-3">Quick Facts</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-brutal-yellow mt-1"><i class="fas fa-map-marker-alt fa-fw"></i></span>
+                  <div>
+                    <span class="block text-brutal-light/50 text-xs font-mono uppercase tracking-wider">Location</span>
+                    <span class="block font-grotesk font-semibold text-sm">Giza, Egypt 🇪🇬</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brutal-cyan mt-1"><i class="fas fa-briefcase fa-fw"></i></span>
+                  <div>
+                    <span class="block text-brutal-light/50 text-xs font-mono uppercase tracking-wider">Primary Role</span>
+                    <span class="block font-grotesk font-semibold text-sm">Digital Ops & Growth Specialist</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brutal-green mt-1"><i class="fas fa-code fa-fw"></i></span>
+                  <div>
+                    <span class="block text-brutal-light/50 text-xs font-mono uppercase tracking-wider">Tech Role</span>
+                    <span class="block font-grotesk font-semibold text-sm">Web Developer</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brutal-orange mt-1"><i class="fas fa-graduation-cap fa-fw"></i></span>
+                  <div>
+                    <span class="block text-brutal-light/50 text-xs font-mono uppercase tracking-wider">Education</span>
+                    <span class="block font-grotesk font-semibold text-sm">Law — Cairo University</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brutal-pink mt-1"><i class="fas fa-circle-check fa-fw"></i></span>
+                  <div>
+                    <span class="block text-brutal-light/50 text-xs font-mono uppercase tracking-wider">Availability</span>
+                    <span class="block font-grotesk font-semibold text-sm text-brutal-green">Open to new projects ✓</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Download or Link CTA -->
+            <a href="https://linktr.ee/Mohammed_Essam1" target="_blank" rel="noopener noreferrer"
+               class="group flex items-center justify-between w-full bg-brutal-yellow text-brutal-dark font-mono font-bold text-sm uppercase tracking-widest px-5 py-4 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200">
+              <span>All Links & Profiles</span>
+              <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform duration-200"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════ EXPERIENCE ═══ -->
+  <section id="experience" class="relative py-24 md:py-32 bg-brutal-dark overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-4 bg-brutal-yellow"></div>
+    <!-- Dot grid -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle, #FFE600 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="mb-16">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-dark bg-brutal-yellow px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">02</span>
+          <span class="font-mono font-bold text-brutal-light/30 text-sm uppercase tracking-widest">// Career</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl lg:text-7xl text-brutal-light leading-none" style="animation-delay:0.1s">
+          WORK<br/><span class="text-brutal-yellow">EXPERIENCE</span>
+        </h2>
+        <div class="reveal-up mt-4 h-2 w-24 bg-brutal-yellow" style="animation-delay:0.2s"></div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="relative">
+        <!-- Vertical line (desktop) -->
+        <div class="hidden lg:block absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-brutal-light/10"></div>
+
+        <div class="space-y-8">
+
+          <!-- Job 1 -->
+          <div class="reveal-up lg:grid lg:grid-cols-2 lg:gap-12 items-start" style="animation-delay:0.1s">
+            <div class="lg:text-right lg:pr-12 mb-4 lg:mb-0">
+              <span class="inline-block font-mono font-bold text-xs text-brutal-yellow bg-brutal-yellow/10 border border-brutal-yellow/30 px-3 py-1 uppercase tracking-widest mb-2">2025 – 2026</span>
+              <h3 class="font-mono font-bold text-brutal-light text-xl">Social Media & Operations Manager</h3>
+              <p class="font-grotesk text-brutal-orange font-semibold text-sm mt-1">Arcasa Furniture & Decor</p>
+            </div>
+            <!-- Dot -->
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-brutal-yellow border-2 border-brutal-dark z-10" style="margin-top: 22px;"></div>
+            <div class="lg:pl-12 bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-yellow p-5 transition-all duration-200">
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-yellow mt-1 flex-shrink-0">▸</span>Directed comprehensive social media operations, including content strategy and moderation teams.</li>
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-yellow mt-1 flex-shrink-0">▸</span>Managed and optimized marketing campaigns to drive engagement and lead generation.</li>
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-yellow mt-1 flex-shrink-0">▸</span>Collaborated with the tech team on website and internal system development initiatives.</li>
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-yellow mt-1 flex-shrink-0">▸</span>Implemented strategies that significantly improved team productivity and workflow efficiency.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="reveal-up lg:grid lg:grid-cols-2 lg:gap-12 items-start" style="animation-delay:0.15s">
+            <div class="lg:text-right lg:pr-12 mb-4 lg:mb-0">
+              <span class="inline-block font-mono font-bold text-xs text-brutal-cyan bg-brutal-cyan/10 border border-brutal-cyan/30 px-3 py-1 uppercase tracking-widest mb-2">2025</span>
+              <h3 class="font-mono font-bold text-brutal-light text-xl">Social Media Specialist Coordinator</h3>
+              <p class="font-grotesk text-brutal-cyan font-semibold text-sm mt-1">Emerald Interiors</p>
+            </div>
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-brutal-cyan border-2 border-brutal-dark z-10" style="margin-top: 22px;"></div>
+            <div class="lg:pl-12 bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-cyan p-5 transition-all duration-200">
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-cyan mt-1 flex-shrink-0">▸</span>Oversaw content execution and ensured successful campaign delivery.</li>
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-cyan mt-1 flex-shrink-0">▸</span>Managed website updates, maintaining brand consistency across all digital platforms.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="reveal-up lg:grid lg:grid-cols-2 lg:gap-12 items-start" style="animation-delay:0.2s">
+            <div class="lg:text-right lg:pr-12 mb-4 lg:mb-0">
+              <span class="inline-block font-mono font-bold text-xs text-brutal-green bg-brutal-green/10 border border-brutal-green/30 px-3 py-1 uppercase tracking-widest mb-2">2024 – 2025</span>
+              <h3 class="font-mono font-bold text-brutal-light text-xl">Website Administrator</h3>
+              <p class="font-grotesk text-brutal-green font-semibold text-sm mt-1">Balance Egypt</p>
+            </div>
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-brutal-green border-2 border-brutal-dark z-10" style="margin-top: 22px;"></div>
+            <div class="lg:pl-12 bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-green p-5 transition-all duration-200">
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-green mt-1 flex-shrink-0">▸</span>Managed product listings, content updates, and overall website structure.</li>
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-green mt-1 flex-shrink-0">▸</span>Streamlined the customer journey from order placement to delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 4 -->
+          <div class="reveal-up lg:grid lg:grid-cols-2 lg:gap-12 items-start" style="animation-delay:0.25s">
+            <div class="lg:text-right lg:pr-12 mb-4 lg:mb-0">
+              <span class="inline-block font-mono font-bold text-xs text-brutal-pink bg-brutal-pink/10 border border-brutal-pink/30 px-3 py-1 uppercase tracking-widest mb-2">2024</span>
+              <h3 class="font-mono font-bold text-brutal-light text-xl">Social Media Moderator Team Leader</h3>
+              <p class="font-grotesk text-brutal-pink font-semibold text-sm mt-1">You Media Agency</p>
+            </div>
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-brutal-pink border-2 border-brutal-dark z-10" style="margin-top: 22px;"></div>
+            <div class="lg:pl-12 bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-pink p-5 transition-all duration-200">
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-pink mt-1 flex-shrink-0">▸</span>Recruited and trained a high-performing social media moderation team.</li>
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-pink mt-1 flex-shrink-0">▸</span>Enhanced response quality and increased engagement rates significantly.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 5 -->
+          <div class="reveal-up lg:grid lg:grid-cols-2 lg:gap-12 items-start" style="animation-delay:0.3s">
+            <div class="lg:text-right lg:pr-12 mb-4 lg:mb-0">
+              <span class="inline-block font-mono font-bold text-xs text-brutal-orange bg-brutal-orange/10 border border-brutal-orange/30 px-3 py-1 uppercase tracking-widest mb-2">2023 – 2024</span>
+              <h3 class="font-mono font-bold text-brutal-light text-xl">Social Media Moderator</h3>
+              <p class="font-grotesk text-brutal-orange font-semibold text-sm mt-1">Elvaya Agency</p>
+            </div>
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-brutal-orange border-2 border-brutal-dark z-10" style="margin-top: 22px;"></div>
+            <div class="lg:pl-12 bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-orange p-5 transition-all duration-200">
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2 font-grotesk text-sm text-brutal-light/70"><span class="text-brutal-orange mt-1 flex-shrink-0">▸</span>Managed social media platforms, content publishing, and customer inquiries.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Jobs 6–8 condensed row -->
+          <div class="reveal-up grid sm:grid-cols-3 gap-6 pt-4" style="animation-delay:0.35s">
+            <div class="bg-brutal-gray border-4 border-brutal-light/10 p-5 hover:border-brutal-yellow transition-all duration-200">
+              <span class="font-mono text-xs text-brutal-yellow/60 uppercase tracking-widest">2023</span>
+              <h4 class="font-mono font-bold text-brutal-light text-sm mt-1">SM Moderator & Data Entry</h4>
+              <p class="font-grotesk text-brutal-light/50 text-xs mt-1">Y.Y Agency</p>
+              <p class="font-grotesk text-brutal-light/40 text-xs mt-2">Published posts, monitored comments, organised data.</p>
+            </div>
+            <div class="bg-brutal-gray border-4 border-brutal-light/10 p-5 hover:border-brutal-cyan transition-all duration-200">
+              <span class="font-mono text-xs text-brutal-cyan/60 uppercase tracking-widest">2020 – 2023</span>
+              <h4 class="font-mono font-bold text-brutal-light text-sm mt-1">Sales Officer</h4>
+              <p class="font-grotesk text-brutal-light/50 text-xs mt-1">Loca Pack for Packing</p>
+              <p class="font-grotesk text-brutal-light/40 text-xs mt-2">Presented products, ensured timely follow-up & delivery.</p>
+            </div>
+            <div class="bg-brutal-gray border-4 border-brutal-light/10 p-5 hover:border-brutal-green transition-all duration-200">
+              <span class="font-mono text-xs text-brutal-green/60 uppercase tracking-widest">2020</span>
+              <h4 class="font-mono font-bold text-brutal-light text-sm mt-1">Social Media Moderator</h4>
+              <p class="font-grotesk text-brutal-light/50 text-xs mt-1">Marina Supplies Co.</p>
+              <p class="font-grotesk text-brutal-light/40 text-xs mt-2">Managed accounts, content, and customer interactions.</p>
+            </div>
+          </div>
+
+        </div><!-- /timeline -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PORTFOLIO ═══ -->
+  <section id="portfolio" class="relative py-24 md:py-32 bg-brutal-dark overflow-hidden">
+    <!-- Accent bars -->
+    <div class="absolute top-0 left-0 w-1/2 h-3 bg-brutal-orange"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-3 bg-brutal-cyan"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="mb-16">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-dark bg-brutal-orange px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">03</span>
+          <span class="font-mono font-bold text-brutal-light/30 text-sm uppercase tracking-widest">// Featured Works</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl lg:text-7xl text-brutal-light leading-none" style="animation-delay:0.1s">
+          MY<br/><span class="text-brutal-orange">WORK</span>
+        </h2>
+        <div class="reveal-up mt-4 h-2 w-24 bg-brutal-orange" style="animation-delay:0.2s"></div>
+        <p class="reveal-up mt-6 text-brutal-light/50 font-grotesk max-w-xl" style="animation-delay:0.25s">
+          A selection of websites and digital platforms I've designed, built, and launched across various industries.
+        </p>
+      </div>
+
+      <!-- Portfolio grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="portfolio-grid">
+
+        <!-- 1 — Pawfect Worlds -->
+        <a href="https://pawfectworlds.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-yellow hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-yellow transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.1s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/pawfectworlds.jpg"
+                 alt="Pawfect Worlds website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-amber-500 to-orange-600 items-center justify-center" style="display:none">
+              <i class="fas fa-paw text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-yellow/60 uppercase tracking-widest">E-commerce · Pets</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-yellow transition-colors duration-200">Pawfect Worlds</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Premium pet products & accessories online store.</p>
+          </div>
+        </a>
+
+        <!-- 2 — Uno Stores -->
+        <a href="https://uno-stores.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-cyan hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-cyan transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.15s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/uno-stores.jpg"
+                 alt="Uno Stores website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-cyan-500 to-blue-700 items-center justify-center" style="display:none">
+              <i class="fas fa-shopping-cart text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-cyan text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-cyan/60 uppercase tracking-widest">Retail · Shopify</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-cyan transition-colors duration-200">Uno Stores</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Multi-product retail store built for seamless shopping.</p>
+          </div>
+        </a>
+
+        <!-- 3 — African Business Council -->
+        <a href="https://africanbusinesscouncil.org/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-green hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#00FF88] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.2s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/africanbusiness.jpg"
+                 alt="African Business Council website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-green-600 to-emerald-800 items-center justify-center" style="display:none">
+              <i class="fas fa-globe-africa text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-green text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-green/60 uppercase tracking-widest">NGO · Business</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-green transition-colors duration-200">African Business Council</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Professional council for African business leaders.</p>
+          </div>
+        </a>
+
+        <!-- 4 — Bloomcare EG -->
+        <a href="https://bloomcareeg.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-pink hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-pink transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.25s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/bloomcare.jpg"
+                 alt="Bloomcare EG website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-pink-500 to-rose-700 items-center justify-center" style="display:none">
+              <i class="fas fa-spa text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-pink text-white font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-pink/60 uppercase tracking-widest">Beauty · Wellness</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-pink transition-colors duration-200">Bloomcare EG</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Beauty & wellness brand e-commerce platform.</p>
+          </div>
+        </a>
+
+        <!-- 5 — Balance Egypt -->
+        <a href="https://balance-egy.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-yellow hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-yellow transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.3s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/balance.jpg"
+                 alt="Balance Egypt website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-yellow-500 to-amber-700 items-center justify-center" style="display:none">
+              <i class="fas fa-balance-scale text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-yellow/60 uppercase tracking-widest">Health · Egypt</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-yellow transition-colors duration-200">Balance Egypt</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Health & lifestyle platform for the Egyptian market.</p>
+          </div>
+        </a>
+
+        <!-- 6 — FBISneakers -->
+        <a href="https://fbisneakers.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-orange hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#FF5C00] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.35s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/fbisneakers.jpg"
+                 alt="FBI Sneakers website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-orange-600 to-red-700 items-center justify-center" style="display:none">
+              <i class="fas fa-shoe-prints text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-orange text-white font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-orange/60 uppercase tracking-widest">Fashion · Sneakers</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-orange transition-colors duration-200">FBISneakers</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Premium sneaker store with curated brand collections.</p>
+          </div>
+        </a>
+
+        <!-- 7 — Bebo Store EG -->
+        <a href="https://www.bebostoreegy.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-purple hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#7C3AED] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.4s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/bebostore.jpg"
+                 alt="Bebo Store EG website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-purple-600 to-violet-800 items-center justify-center" style="display:none">
+              <i class="fas fa-bag-shopping text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-purple text-white font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-purple-400/60 uppercase tracking-widest">Retail · Egypt</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-purple-400 transition-colors duration-200">Bebo Store EG</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Egyptian retail store with diverse consumer products.</p>
+          </div>
+        </a>
+
+        <!-- 8 — XShoess -->
+        <a href="https://xshoess.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-cyan hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-cyan transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.45s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/xshoess.jpg"
+                 alt="XShoess website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-slate-600 to-slate-900 items-center justify-center" style="display:none">
+              <i class="fas fa-shoe-prints text-brutal-cyan text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-cyan text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-cyan/60 uppercase tracking-widest">Fashion · Footwear</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-cyan transition-colors duration-200">XShoess</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Trendy footwear e-commerce with modern UX design.</p>
+          </div>
+        </a>
+
+        <!-- 9 — 3Angles Egypt -->
+        <a href="https://3angles-egypt.myshopify.com" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-green hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#00FF88] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.5s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/3angles.jpg"
+                 alt="3Angles Egypt Shopify screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-teal-500 to-green-700 items-center justify-center" style="display:none">
+              <i class="fas fa-shapes text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-green text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-green/60 uppercase tracking-widest">Shopify · Egypt</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-green transition-colors duration-200">3Angles Egypt</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Shopify store for the Egyptian consumer market.</p>
+          </div>
+        </a>
+
+        <!-- 10 — Sneaker Store E -->
+        <a href="https://sneakerstoree.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-yellow hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-yellow transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.55s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/sneakerstoree.jpg"
+                 alt="Sneaker Store E website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-yellow-600 to-yellow-900 items-center justify-center" style="display:none">
+              <i class="fas fa-star text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-yellow/60 uppercase tracking-widest">Fashion · Footwear</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-yellow transition-colors duration-200">Sneaker Store E</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Curated sneaker store with exclusive drops.</p>
+          </div>
+        </a>
+
+        <!-- 11 — FIA EG -->
+        <a href="https://fia-eg.com" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-orange hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#FF5C00] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.6s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/fia.jpg"
+                 alt="FIA EG website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-red-600 to-orange-800 items-center justify-center" style="display:none">
+              <i class="fas fa-industry text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-orange text-white font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-orange/60 uppercase tracking-widest">Corporate · Egypt</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-orange transition-colors duration-200">FIA EG</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Corporate website for Egyptian industry leaders.</p>
+          </div>
+        </a>
+
+        <!-- 12 — Dukaan AK -->
+        <a href="https://dukaan-ak.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-pink hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-pink transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.65s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/dukaan.jpg"
+                 alt="Dukaan AK website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-rose-500 to-pink-800 items-center justify-center" style="display:none">
+              <i class="fas fa-shop text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-pink text-white font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-pink/60 uppercase tracking-widest">E-commerce</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-pink transition-colors duration-200">Dukaan AK</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Digital store with streamlined checkout experience.</p>
+          </div>
+        </a>
+
+        <!-- 13 — 3Angles Easy Orders -->
+        <a href="https://3angles.myeasyorders.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-cyan hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-cyan transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.7s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/3angles-easy.jpg"
+                 alt="3Angles Easy Orders screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-cyan-600 to-sky-800 items-center justify-center" style="display:none">
+              <i class="fas fa-clipboard-list text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-cyan text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-cyan/60 uppercase tracking-widest">Easy Orders</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-cyan transition-colors duration-200">3Angles Easy Orders</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Streamlined ordering via Easy Orders platform.</p>
+          </div>
+        </a>
+
+        <!-- 14 — Fioonka -->
+        <a href="https://fioonka.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-yellow hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-yellow transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.75s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/fioonka.jpg"
+                 alt="Fioonka website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-fuchsia-500 to-purple-700 items-center justify-center" style="display:none">
+              <i class="fas fa-gem text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-yellow/60 uppercase tracking-widest">Fashion · Luxury</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-yellow transition-colors duration-200">Fioonka</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Luxury fashion brand with sophisticated e-commerce.</p>
+          </div>
+        </a>
+
+        <!-- 15 — Yahia Salah -->
+        <a href="https://yahia-salah.free.nf/?i=2" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-green hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#00FF88] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.8s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/yahia.jpg"
+                 alt="Yahia Salah portfolio website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-800 items-center justify-center" style="display:none">
+              <i class="fas fa-user-tie text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-green text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-green/60 uppercase tracking-widest">Personal · Portfolio</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-green transition-colors duration-200">Yahia Salah</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Personal portfolio showcasing professional achievements.</p>
+          </div>
+        </a>
+
+        <!-- 16 — Techz0ne -->
+        <a href="https://techz0ne.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-orange hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#FF5C00] transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.85s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/techzone.jpg"
+                 alt="Techz0ne website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-zinc-700 to-zinc-900 items-center justify-center" style="display:none">
+              <i class="fas fa-microchip text-brutal-orange text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-orange text-white font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-orange/60 uppercase tracking-widest">Tech · Zone</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-orange transition-colors duration-200">Techz0ne</h3>
+            <p class="text-brutal-light/40 text-xs font-grotesk mt-1 leading-relaxed">Technology hub with reviews, deals & tech content.</p>
+          </div>
+        </a>
+
+      </div><!-- /portfolio-grid -->
+
+      <!-- CTA -->
+      <div class="reveal-up mt-16 text-center" style="animation-delay:0.3s">
+        <a href="https://linktr.ee/Mohammed_Essam1" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 bg-brutal-orange text-white font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 border-4 border-brutal-light shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-xl transition-all duration-200">
+          <i class="fas fa-link"></i>
+          See All Projects on Linktree
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════ SKILLS ═══ -->
+  <section id="skills" class="relative py-24 md:py-32 bg-brutal-gray overflow-hidden">
+    <!-- Accent -->
+    <div class="absolute top-0 left-0 w-full h-3 bg-brutal-dark"></div>
+    <div class="absolute top-3 left-0 w-full h-1 bg-brutal-cyan"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="mb-16">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-dark bg-brutal-cyan px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">04</span>
+          <span class="font-mono font-bold text-brutal-light/30 text-sm uppercase tracking-widest">// Skills & Tools</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl lg:text-7xl text-brutal-light leading-none" style="animation-delay:0.1s">
+          MY<br/><span class="text-brutal-cyan">SKILLS</span>
+        </h2>
+        <div class="reveal-up mt-4 h-2 w-24 bg-brutal-cyan" style="animation-delay:0.2s"></div>
+      </div>
+
+      <!-- Skills grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- AI Tools -->
+        <div class="reveal-up skill-category group" style="animation-delay:0.1s">
+          <div class="relative bg-brutal-dark border-4 border-brutal-cyan p-6 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-cyan transition-all duration-300">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-cyan/10 border-4 border-brutal-cyan -z-10"></div>
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-brutal-cyan flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-robot text-brutal-dark text-xl"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-lg">AI Tools</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag bg-brutal-gray text-brutal-cyan border-2 border-brutal-cyan/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-cyan hover:text-brutal-dark transition-all duration-200 cursor-default">ChatGPT</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-cyan border-2 border-brutal-cyan/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-cyan hover:text-brutal-dark transition-all duration-200 cursor-default">Gemini</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-cyan border-2 border-brutal-cyan/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-cyan hover:text-brutal-dark transition-all duration-200 cursor-default">Claude</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-cyan border-2 border-brutal-cyan/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-cyan hover:text-brutal-dark transition-all duration-200 cursor-default">Manus</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-cyan border-2 border-brutal-cyan/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-cyan hover:text-brutal-dark transition-all duration-200 cursor-default">AI Content Tools</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-cyan border-2 border-brutal-cyan/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-cyan hover:text-brutal-dark transition-all duration-200 cursor-default">No-Code Solutions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="reveal-up skill-category" style="animation-delay:0.15s">
+          <div class="relative bg-brutal-dark border-4 border-brutal-yellow p-6 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-yellow transition-all duration-300">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-yellow/10 border-4 border-brutal-yellow -z-10"></div>
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-brutal-yellow flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-code text-brutal-dark text-xl"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-lg">Web Development</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag bg-brutal-gray text-brutal-yellow border-2 border-brutal-yellow/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200 cursor-default">Shopify</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-yellow border-2 border-brutal-yellow/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200 cursor-default">WordPress</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-yellow border-2 border-brutal-yellow/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200 cursor-default">Easy Orders</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-yellow border-2 border-brutal-yellow/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200 cursor-default">HTML/CSS</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-yellow border-2 border-brutal-yellow/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200 cursor-default">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="reveal-up skill-category" style="animation-delay:0.2s">
+          <div class="relative bg-brutal-dark border-4 border-brutal-green p-6 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[6px_6px_0_0_#00FF88] transition-all duration-300">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-green/10 border-4 border-brutal-green -z-10"></div>
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-brutal-green flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-store text-brutal-dark text-xl"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-lg">E-commerce</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag bg-brutal-gray text-brutal-green border-2 border-brutal-green/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-green hover:text-brutal-dark transition-all duration-200 cursor-default">Store Setup</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-green border-2 border-brutal-green/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-green hover:text-brutal-dark transition-all duration-200 cursor-default">Product Listing</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-green border-2 border-brutal-green/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-green hover:text-brutal-dark transition-all duration-200 cursor-default">Payments</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-green border-2 border-brutal-green/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-green hover:text-brutal-dark transition-all duration-200 cursor-default">Order Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="reveal-up skill-category" style="animation-delay:0.25s">
+          <div class="relative bg-brutal-dark border-4 border-brutal-pink p-6 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-pink transition-all duration-300">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-pink/10 border-4 border-brutal-pink -z-10"></div>
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-brutal-pink flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fab fa-instagram text-white text-xl"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-lg">Social Media</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag bg-brutal-gray text-brutal-pink border-2 border-brutal-pink/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-pink hover:text-white transition-all duration-200 cursor-default">Instagram</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-pink border-2 border-brutal-pink/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-pink hover:text-white transition-all duration-200 cursor-default">Facebook</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-pink border-2 border-brutal-pink/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-pink hover:text-white transition-all duration-200 cursor-default">TikTok</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-pink border-2 border-brutal-pink/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-pink hover:text-white transition-all duration-200 cursor-default">Strategy</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-pink border-2 border-brutal-pink/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-pink hover:text-white transition-all duration-200 cursor-default">Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- No-Code Apps -->
+        <div class="reveal-up skill-category" style="animation-delay:0.3s">
+          <div class="relative bg-brutal-dark border-4 border-brutal-orange p-6 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[6px_6px_0_0_#FF5C00] transition-all duration-300">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-orange/10 border-4 border-brutal-orange -z-10"></div>
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-brutal-orange flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-puzzle-piece text-white text-xl"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-lg">No-Code Apps</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag bg-brutal-gray text-brutal-orange border-2 border-brutal-orange/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-orange hover:text-white transition-all duration-200 cursor-default">No-Code Platforms</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-orange border-2 border-brutal-orange/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-orange hover:text-white transition-all duration-200 cursor-default">AI Automation</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-orange border-2 border-brutal-orange/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-orange hover:text-white transition-all duration-200 cursor-default">Zapier / Make</span>
+              <span class="skill-tag bg-brutal-gray text-brutal-orange border-2 border-brutal-orange/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-orange hover:text-white transition-all duration-200 cursor-default">Notion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Creation -->
+        <div class="reveal-up skill-category" style="animation-delay:0.35s">
+          <div class="relative bg-brutal-dark border-4 border-brutal-purple p-6 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[6px_6px_0_0_#7C3AED] transition-all duration-300">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-purple/10 border-4 border-brutal-purple -z-10"></div>
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-12 h-12 bg-brutal-purple flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-paint-brush text-white text-xl"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-lg">Content Creation</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag bg-brutal-gray text-purple-400 border-2 border-purple-400/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-purple hover:text-white transition-all duration-200 cursor-default">Canva</span>
+              <span class="skill-tag bg-brutal-gray text-purple-400 border-2 border-purple-400/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-purple hover:text-white transition-all duration-200 cursor-default">CapCut</span>
+              <span class="skill-tag bg-brutal-gray text-purple-400 border-2 border-purple-400/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-purple hover:text-white transition-all duration-200 cursor-default">Photoshoots</span>
+              <span class="skill-tag bg-brutal-gray text-purple-400 border-2 border-purple-400/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-purple hover:text-white transition-all duration-200 cursor-default">Copywriting</span>
+              <span class="skill-tag bg-brutal-gray text-purple-400 border-2 border-purple-400/50 font-mono text-xs px-3 py-1.5 hover:bg-brutal-purple hover:text-white transition-all duration-200 cursor-default">Creative Direction</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /skills grid -->
+
+      <!-- Skill progress bars -->
+      <div class="reveal-up mt-16 grid md:grid-cols-2 gap-8" style="animation-delay:0.4s">
+        <div>
+          <h3 class="font-mono font-bold text-brutal-light text-xl mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-brutal-yellow flex items-center justify-center border-2 border-brutal-dark">
+              <i class="fas fa-chart-bar text-brutal-dark text-xs"></i>
+            </span>
+            Proficiency Levels
+          </h3>
+          <div class="space-y-4">
+            <div class="skill-bar" data-pct="95">
+              <div class="flex justify-between mb-1 font-mono text-xs text-brutal-light/70 uppercase tracking-wider">
+                <span>Shopify / E-commerce</span><span class="text-brutal-yellow">95%</span>
+              </div>
+              <div class="h-3 bg-brutal-dark border-2 border-brutal-light/20">
+                <div class="h-full bg-brutal-yellow bar-fill" style="width:0%"></div>
+              </div>
+            </div>
+            <div class="skill-bar" data-pct="90">
+              <div class="flex justify-between mb-1 font-mono text-xs text-brutal-light/70 uppercase tracking-wider">
+                <span>Social Media Management</span><span class="text-brutal-cyan">90%</span>
+              </div>
+              <div class="h-3 bg-brutal-dark border-2 border-brutal-light/20">
+                <div class="h-full bg-brutal-cyan bar-fill" style="width:0%"></div>
+              </div>
+            </div>
+            <div class="skill-bar" data-pct="85">
+              <div class="flex justify-between mb-1 font-mono text-xs text-brutal-light/70 uppercase tracking-wider">
+                <span>WordPress Development</span><span class="text-brutal-orange">85%</span>
+              </div>
+              <div class="h-3 bg-brutal-dark border-2 border-brutal-light/20">
+                <div class="h-full bg-brutal-orange bar-fill" style="width:0%"></div>
+              </div>
+            </div>
+            <div class="skill-bar" data-pct="88">
+              <div class="flex justify-between mb-1 font-mono text-xs text-brutal-light/70 uppercase tracking-wider">
+                <span>AI Tools & Automation</span><span class="text-brutal-green">88%</span>
+              </div>
+              <div class="h-3 bg-brutal-dark border-2 border-brutal-light/20">
+                <div class="h-full bg-brutal-green bar-fill" style="width:0%"></div>
+              </div>
+            </div>
+            <div class="skill-bar" data-pct="80">
+              <div class="flex justify-between mb-1 font-mono text-xs text-brutal-light/70 uppercase tracking-wider">
+                <span>No-Code Development</span><span class="text-brutal-pink">80%</span>
+              </div>
+              <div class="h-3 bg-brutal-dark border-2 border-brutal-light/20">
+                <div class="h-full bg-brutal-pink bar-fill" style="width:0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Marketing block -->
+        <div class="bg-brutal-dark border-4 border-brutal-light/10 p-6">
+          <h3 class="font-mono font-bold text-brutal-light text-xl mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-brutal-orange flex items-center justify-center border-2 border-brutal-dark">
+              <i class="fas fa-bullhorn text-white text-xs"></i>
+            </span>
+            Digital Marketing
+          </h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="dm-card group bg-brutal-gray border-2 border-brutal-light/10 p-4 hover:border-brutal-yellow hover:bg-brutal-yellow/5 transition-all duration-200 cursor-default">
+              <i class="fas fa-ad text-brutal-yellow text-2xl mb-2 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-brutal-light text-xs uppercase tracking-wider">Paid Ads</p>
+              <p class="text-brutal-light/40 text-xs mt-1 font-grotesk">Facebook & Google</p>
+            </div>
+            <div class="dm-card group bg-brutal-gray border-2 border-brutal-light/10 p-4 hover:border-brutal-cyan hover:bg-brutal-cyan/5 transition-all duration-200 cursor-default">
+              <i class="fas fa-search text-brutal-cyan text-2xl mb-2 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-brutal-light text-xs uppercase tracking-wider">SEO</p>
+              <p class="text-brutal-light/40 text-xs mt-1 font-grotesk">On-page & Technical</p>
+            </div>
+            <div class="dm-card group bg-brutal-gray border-2 border-brutal-light/10 p-4 hover:border-brutal-green hover:bg-brutal-green/5 transition-all duration-200 cursor-default">
+              <i class="fas fa-envelope text-brutal-green text-2xl mb-2 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-brutal-light text-xs uppercase tracking-wider">Email Marketing</p>
+              <p class="text-brutal-light/40 text-xs mt-1 font-grotesk">Campaigns & Funnels</p>
+            </div>
+            <div class="dm-card group bg-brutal-gray border-2 border-brutal-light/10 p-4 hover:border-brutal-pink hover:bg-brutal-pink/5 transition-all duration-200 cursor-default">
+              <i class="fas fa-chart-line text-brutal-pink text-2xl mb-2 group-hover:scale-110 transition-transform duration-200"></i>
+              <p class="font-mono font-bold text-brutal-light text-xs uppercase tracking-wider">Analytics</p>
+              <p class="text-brutal-light/40 text-xs mt-1 font-grotesk">Data-Driven Growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ UPCOMING PROJECTS ═══ -->
+  <section id="upcoming" class="relative py-24 md:py-32 bg-brutal-dark overflow-hidden">
+    <!-- Accent -->
+    <div class="absolute top-0 left-0 w-full h-4 bg-brutal-yellow"></div>
+    <!-- Background texture -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle, #FFE600 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="mb-16 text-center">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-dark bg-brutal-yellow px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">05</span>
+          <span class="font-mono font-bold text-brutal-light/30 text-sm uppercase tracking-widest">// Future Tools</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl lg:text-7xl text-brutal-light leading-none mb-4" style="animation-delay:0.1s">
+          FUTURE<br/><span class="text-brutal-yellow">TOOLS & APPS</span>
+        </h2>
+        <div class="reveal-up flex justify-center" style="animation-delay:0.2s">
+          <div class="h-2 w-24 bg-brutal-yellow"></div>
+        </div>
+        <p class="reveal-up mt-6 text-brutal-light/50 font-grotesk max-w-xl mx-auto" style="animation-delay:0.25s">
+          Exciting tools and applications currently in development. Stay tuned for launches that will transform how you work online.
+        </p>
+      </div>
+
+      <!-- Upcoming project cards -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="reveal-up upcoming-card group relative overflow-hidden" style="animation-delay:0.1s">
+          <div class="relative bg-brutal-gray border-4 border-brutal-yellow/30 hover:border-brutal-yellow p-8 h-full hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-yellow transition-all duration-300">
+            <!-- Coming soon badge -->
+            <div class="absolute top-5 right-5 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs uppercase tracking-widest px-3 py-1 border-2 border-brutal-dark animate-pulse">
+              Coming Soon
+            </div>
+            <!-- Animated hover gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-brutal-yellow/0 to-brutal-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            <div class="relative z-10">
+              <div class="w-16 h-16 bg-brutal-yellow/10 border-2 border-brutal-yellow flex items-center justify-center mb-6 group-hover:bg-brutal-yellow group-hover:border-brutal-dark transition-all duration-300">
+                <i class="fas fa-robot text-brutal-yellow text-2xl group-hover:text-brutal-dark transition-colors duration-300"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-xl mb-3">AI Content Studio</h3>
+              <p class="font-grotesk text-brutal-light/50 text-sm leading-relaxed">
+                An all-in-one AI-powered platform for generating marketing copy, social media posts, and ad creatives — tailored for MENA businesses.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="font-mono text-xs text-brutal-yellow border border-brutal-yellow/30 px-2 py-1">AI Writing</span>
+                <span class="font-mono text-xs text-brutal-yellow border border-brutal-yellow/30 px-2 py-1">Marketing</span>
+                <span class="font-mono text-xs text-brutal-yellow border border-brutal-yellow/30 px-2 py-1">SaaS</span>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brutal-light/10">
+                <div class="flex items-center gap-2">
+                  <div class="upcoming-progress-bar flex-1 h-1.5 bg-brutal-dark/50 overflow-hidden">
+                    <div class="h-full bg-brutal-yellow" style="width: 65%"></div>
+                  </div>
+                  <span class="font-mono text-xs text-brutal-yellow/60">65%</span>
+                </div>
+                <p class="font-mono text-xs text-brutal-light/30 mt-1 uppercase tracking-wider">Development Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="reveal-up upcoming-card group relative overflow-hidden" style="animation-delay:0.2s">
+          <div class="relative bg-brutal-gray border-4 border-brutal-cyan/30 hover:border-brutal-cyan p-8 h-full hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-cyan transition-all duration-300">
+            <div class="absolute top-5 right-5 bg-brutal-cyan text-brutal-dark font-mono font-bold text-xs uppercase tracking-widest px-3 py-1 border-2 border-brutal-dark animate-pulse">
+              Coming Soon
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-brutal-cyan/0 to-brutal-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            <div class="relative z-10">
+              <div class="w-16 h-16 bg-brutal-cyan/10 border-2 border-brutal-cyan flex items-center justify-center mb-6 group-hover:bg-brutal-cyan group-hover:border-brutal-dark transition-all duration-300">
+                <i class="fas fa-store text-brutal-cyan text-2xl group-hover:text-brutal-dark transition-colors duration-300"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-xl mb-3">E-shop Launcher Pro</h3>
+              <p class="font-grotesk text-brutal-light/50 text-sm leading-relaxed">
+                A no-code tool that lets entrepreneurs launch a full e-commerce store in under 24 hours — pre-configured with payment gateways, products, and marketing tools.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="font-mono text-xs text-brutal-cyan border border-brutal-cyan/30 px-2 py-1">No-Code</span>
+                <span class="font-mono text-xs text-brutal-cyan border border-brutal-cyan/30 px-2 py-1">E-commerce</span>
+                <span class="font-mono text-xs text-brutal-cyan border border-brutal-cyan/30 px-2 py-1">Tool</span>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brutal-light/10">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 h-1.5 bg-brutal-dark/50 overflow-hidden">
+                    <div class="h-full bg-brutal-cyan" style="width: 40%"></div>
+                  </div>
+                  <span class="font-mono text-xs text-brutal-cyan/60">40%</span>
+                </div>
+                <p class="font-mono text-xs text-brutal-light/30 mt-1 uppercase tracking-wider">Development Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="reveal-up upcoming-card group relative overflow-hidden" style="animation-delay:0.3s">
+          <div class="relative bg-brutal-gray border-4 border-brutal-pink/30 hover:border-brutal-pink p-8 h-full hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-pink transition-all duration-300">
+            <div class="absolute top-5 right-5 bg-brutal-pink text-white font-mono font-bold text-xs uppercase tracking-widest px-3 py-1 border-2 border-brutal-dark animate-pulse">
+              Coming Soon
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-brutal-pink/0 to-brutal-pink/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            <div class="relative z-10">
+              <div class="w-16 h-16 bg-brutal-pink/10 border-2 border-brutal-pink flex items-center justify-center mb-6 group-hover:bg-brutal-pink group-hover:border-brutal-dark transition-all duration-300">
+                <i class="fas fa-chart-pie text-brutal-pink text-2xl group-hover:text-white transition-colors duration-300"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-xl mb-3">Social Analytics Dashboard</h3>
+              <p class="font-grotesk text-brutal-light/50 text-sm leading-relaxed">
+                Unified analytics dashboard that aggregates performance from all major social platforms, delivering actionable insights in one clean interface.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="font-mono text-xs text-brutal-pink border border-brutal-pink/30 px-2 py-1">Analytics</span>
+                <span class="font-mono text-xs text-brutal-pink border border-brutal-pink/30 px-2 py-1">Social Media</span>
+                <span class="font-mono text-xs text-brutal-pink border border-brutal-pink/30 px-2 py-1">Dashboard</span>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brutal-light/10">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 h-1.5 bg-brutal-dark/50 overflow-hidden">
+                    <div class="h-full bg-brutal-pink" style="width: 25%"></div>
+                  </div>
+                  <span class="font-mono text-xs text-brutal-pink/60">25%</span>
+                </div>
+                <p class="font-mono text-xs text-brutal-light/30 mt-1 uppercase tracking-wider">Development Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="reveal-up upcoming-card group relative overflow-hidden" style="animation-delay:0.4s">
+          <div class="relative bg-brutal-gray border-4 border-brutal-green/30 hover:border-brutal-green p-8 h-full hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#00FF88] transition-all duration-300">
+            <div class="absolute top-5 right-5 bg-brutal-green text-brutal-dark font-mono font-bold text-xs uppercase tracking-widest px-3 py-1 border-2 border-brutal-dark animate-pulse">
+              Coming Soon
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-brutal-green/0 to-brutal-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            <div class="relative z-10">
+              <div class="w-16 h-16 bg-brutal-green/10 border-2 border-brutal-green flex items-center justify-center mb-6 group-hover:bg-brutal-green group-hover:border-brutal-dark transition-all duration-300">
+                <i class="fas fa-wand-magic-sparkles text-brutal-green text-2xl group-hover:text-brutal-dark transition-colors duration-300"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-xl mb-3">Digital Brand Kit Generator</h3>
+              <p class="font-grotesk text-brutal-light/50 text-sm leading-relaxed">
+                AI-powered branding tool that generates complete visual brand packages — logos, color palettes, fonts, and templates — from a simple business description.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="font-mono text-xs text-brutal-green border border-brutal-green/30 px-2 py-1">Branding</span>
+                <span class="font-mono text-xs text-brutal-green border border-brutal-green/30 px-2 py-1">AI</span>
+                <span class="font-mono text-xs text-brutal-green border border-brutal-green/30 px-2 py-1">Design</span>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brutal-light/10">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 h-1.5 bg-brutal-dark/50 overflow-hidden">
+                    <div class="h-full bg-brutal-green" style="width: 15%"></div>
+                  </div>
+                  <span class="font-mono text-xs text-brutal-green/60">15%</span>
+                </div>
+                <p class="font-mono text-xs text-brutal-light/30 mt-1 uppercase tracking-wider">Development Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="reveal-up upcoming-card group relative overflow-hidden md:col-span-2 lg:col-span-1" style="animation-delay:0.5s">
+          <div class="relative bg-brutal-gray border-4 border-brutal-orange/30 hover:border-brutal-orange p-8 h-full hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[6px_6px_0_0_#FF5C00] transition-all duration-300">
+            <div class="absolute top-5 right-5 bg-brutal-orange text-white font-mono font-bold text-xs uppercase tracking-widest px-3 py-1 border-2 border-brutal-dark animate-pulse">
+              Coming Soon
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-brutal-orange/0 to-brutal-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            <div class="relative z-10">
+              <div class="w-16 h-16 bg-brutal-orange/10 border-2 border-brutal-orange flex items-center justify-center mb-6 group-hover:bg-brutal-orange group-hover:border-brutal-dark transition-all duration-300">
+                <i class="fas fa-mobile-screen text-brutal-orange text-2xl group-hover:text-white transition-colors duration-300"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-light text-xl mb-3">OrderFlow Mobile App</h3>
+              <p class="font-grotesk text-brutal-light/50 text-sm leading-relaxed">
+                Mobile-first order management app for small businesses — track, fulfill, and communicate with customers all from your phone.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="font-mono text-xs text-brutal-orange border border-brutal-orange/30 px-2 py-1">Mobile</span>
+                <span class="font-mono text-xs text-brutal-orange border border-brutal-orange/30 px-2 py-1">Operations</span>
+                <span class="font-mono text-xs text-brutal-orange border border-brutal-orange/30 px-2 py-1">App</span>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brutal-light/10">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 h-1.5 bg-brutal-dark/50 overflow-hidden">
+                    <div class="h-full bg-brutal-orange" style="width: 50%"></div>
+                  </div>
+                  <span class="font-mono text-xs text-brutal-orange/60">50%</span>
+                </div>
+                <p class="font-mono text-xs text-brutal-light/30 mt-1 uppercase tracking-wider">Development Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /upcoming grid -->
+
+      <!-- Newsletter teaser -->
+      <div class="reveal-up mt-16 bg-brutal-yellow border-4 border-brutal-dark shadow-brutal-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6" style="animation-delay:0.3s">
+        <div>
+          <h3 class="font-mono font-bold text-brutal-dark text-xl md:text-2xl">🚀 Get notified when they launch</h3>
+          <p class="font-grotesk text-brutal-dark/60 text-sm mt-1">Be the first to know about upcoming tools and exclusive early-access offers.</p>
+        </div>
+        <a href="#contact" class="flex-shrink-0 inline-flex items-center gap-3 bg-brutal-dark text-brutal-yellow font-mono font-bold text-sm uppercase tracking-widest px-6 py-4 border-4 border-brutal-dark hover:bg-brutal-gray transition-all duration-200 shadow-brutal">
+          <i class="fas fa-bell"></i>
+          Notify Me
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ EDUCATION / CERTS / LANG ═══ -->
+  <section id="education" class="relative py-24 md:py-32 bg-brutal-light overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-4 bg-brutal-dark"></div>
+    <div class="absolute top-4 left-0 w-1/3 h-2 bg-brutal-yellow"></div>
+    <div class="absolute bottom-0 right-0 w-2/3 h-3 bg-brutal-dark"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Header -->
+      <div class="mb-16">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-light bg-brutal-dark px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">06</span>
+          <span class="font-mono font-bold text-brutal-dark/40 text-sm uppercase tracking-widest">// Credentials</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl text-brutal-dark leading-none" style="animation-delay:0.1s">
+          EDUCATION &<br/><span class="text-brutal-orange">CREDENTIALS</span>
+        </h2>
+        <div class="reveal-up mt-4 h-2 w-24 bg-brutal-dark" style="animation-delay:0.2s"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Education -->
+        <div class="reveal-up" style="animation-delay:0.1s">
+          <div class="relative bg-brutal-dark text-brutal-light border-4 border-brutal-dark p-6 h-full">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-yellow border-4 border-brutal-dark -z-10"></div>
+            <div class="flex items-center gap-3 mb-6 pb-4 border-b-2 border-brutal-light/10">
+              <div class="w-10 h-10 bg-brutal-yellow flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-graduation-cap text-brutal-dark text-lg"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-yellow text-sm uppercase tracking-widest">Education</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <p class="font-mono font-bold text-brutal-light text-base">Bachelor of Law</p>
+                <p class="font-grotesk text-brutal-light/60 text-sm mt-1">Cairo University</p>
+                <span class="inline-block font-mono text-xs text-brutal-yellow/70 border border-brutal-yellow/20 px-2 py-0.5 mt-2">2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="reveal-up" style="animation-delay:0.2s">
+          <div class="relative bg-brutal-dark text-brutal-light border-4 border-brutal-cyan p-6 h-full">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-cyan/20 border-4 border-brutal-cyan -z-10"></div>
+            <div class="flex items-center gap-3 mb-6 pb-4 border-b-2 border-brutal-light/10">
+              <div class="w-10 h-10 bg-brutal-cyan flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-certificate text-brutal-dark text-lg"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-cyan text-sm uppercase tracking-widest">Certifications</h3>
+            </div>
+            <div class="space-y-5">
+              <div class="flex items-start gap-3">
+                <span class="text-brutal-yellow mt-1 flex-shrink-0"><i class="fas fa-check-circle fa-fw text-sm"></i></span>
+                <div>
+                  <p class="font-grotesk font-semibold text-brutal-light text-sm">CRM Academy</p>
+                  <p class="font-mono text-brutal-light/40 text-xs">Odoo · 2026</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-brutal-yellow mt-1 flex-shrink-0"><i class="fas fa-check-circle fa-fw text-sm"></i></span>
+                <div>
+                  <p class="font-grotesk font-semibold text-brutal-light text-sm">Freelancing Skills</p>
+                  <p class="font-mono text-brutal-light/40 text-xs">ITIDA & EYouth · 2026</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-brutal-yellow mt-1 flex-shrink-0"><i class="fas fa-check-circle fa-fw text-sm"></i></span>
+                <div>
+                  <p class="font-grotesk font-semibold text-brutal-light text-sm">Gemini Certified Educator</p>
+                  <p class="font-mono text-brutal-light/40 text-xs">Google · 2025</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-brutal-yellow mt-1 flex-shrink-0"><i class="fas fa-check-circle fa-fw text-sm"></i></span>
+                <div>
+                  <p class="font-grotesk font-semibold text-brutal-light text-sm">ICDL</p>
+                  <p class="font-mono text-brutal-light/40 text-xs">Archplan Group · 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="reveal-up" style="animation-delay:0.3s">
+          <div class="relative bg-brutal-dark text-brutal-light border-4 border-brutal-pink p-6 h-full">
+            <div class="absolute -top-2 -right-2 w-full h-full bg-brutal-pink/20 border-4 border-brutal-pink -z-10"></div>
+            <div class="flex items-center gap-3 mb-6 pb-4 border-b-2 border-brutal-light/10">
+              <div class="w-10 h-10 bg-brutal-pink flex items-center justify-center border-2 border-brutal-dark flex-shrink-0">
+                <i class="fas fa-language text-white text-lg"></i>
+              </div>
+              <h3 class="font-mono font-bold text-brutal-pink text-sm uppercase tracking-widest">Languages</h3>
+            </div>
+            <div class="space-y-5">
+              <!-- Arabic -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-grotesk font-semibold text-brutal-light text-sm">Arabic</span>
+                  <span class="font-mono text-xs text-brutal-yellow border border-brutal-yellow/30 px-2 py-0.5">Native</span>
+                </div>
+                <div class="h-2 bg-brutal-gray border border-brutal-light/10">
+                  <div class="h-full bg-brutal-yellow" style="width:100%"></div>
+                </div>
+              </div>
+              <!-- English -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-grotesk font-semibold text-brutal-light text-sm">English</span>
+                  <span class="font-mono text-xs text-brutal-cyan border border-brutal-cyan/30 px-2 py-0.5">Intermediate</span>
+                </div>
+                <div class="h-2 bg-brutal-gray border border-brutal-light/10">
+                  <div class="h-full bg-brutal-cyan" style="width:65%"></div>
+                </div>
+              </div>
+              <!-- French -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-grotesk font-semibold text-brutal-light text-sm">French</span>
+                  <span class="font-mono text-xs text-brutal-pink border border-brutal-pink/30 px-2 py-0.5">Basic</span>
+                </div>
+                <div class="h-2 bg-brutal-gray border border-brutal-light/10">
+                  <div class="h-full bg-brutal-pink" style="width:30%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools strip -->
+            <div class="mt-8 pt-5 border-t-2 border-brutal-light/10">
+              <p class="font-mono text-xs text-brutal-light/40 uppercase tracking-widest mb-3">Favourite Tools</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">Canva</span>
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">CapCut</span>
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">Notion</span>
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">Meta Business</span>
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">ChatGPT</span>
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">Gemini</span>
+                <span class="font-mono text-xs text-brutal-light/60 border border-brutal-light/10 px-2 py-1">Manus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ CONTACT ═══ -->
+  <section id="contact" class="relative py-24 md:py-32 bg-brutal-light overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-4 bg-brutal-dark"></div>
+    <div class="absolute top-4 left-0 w-1/3 h-3 bg-brutal-pink"></div>
+    <div class="absolute top-4 left-1/3 w-1/3 h-3 bg-brutal-yellow"></div>
+    <div class="absolute top-4 right-0 w-1/3 h-3 bg-brutal-cyan"></div>
+
+    <!-- Background dots -->
+    <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle, #0A0A0A 1px, transparent 1px); background-size: 25px 25px;"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="mb-16">
+        <div class="reveal-up inline-flex items-center gap-3 mb-4">
+          <span class="font-mono font-bold text-brutal-light bg-brutal-pink px-3 py-1 text-sm uppercase tracking-widest border-2 border-brutal-dark shadow-brutal">07</span>
+          <span class="font-mono font-bold text-brutal-dark/40 text-sm uppercase tracking-widest">// Get in Touch</span>
+        </div>
+        <h2 class="reveal-up font-mono font-bold text-5xl md:text-6xl lg:text-7xl text-brutal-dark leading-none" style="animation-delay:0.1s">
+          LET'S<br/><span class="text-brutal-pink">WORK</span> <span class="text-brutal-dark">TOGETHER</span>
+        </h2>
+        <div class="reveal-up mt-4 h-2 w-24 bg-brutal-pink" style="animation-delay:0.2s"></div>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-12">
+
+        <!-- Left: Contact info -->
+        <div class="lg:col-span-2 space-y-5">
+
+          <div class="reveal-up" style="animation-delay:0.15s">
+            <p class="font-grotesk text-brutal-dark/70 text-base leading-relaxed mb-6">
+              Ready to launch your next project? Whether it's a brand new store, a social media strategy, or an AI-powered tool — let's make it happen together.
+            </p>
+          </div>
+
+          <!-- Contact cards -->
+          <div class="reveal-up space-y-3" style="animation-delay:0.2s">
+
+            <a href="mailto:mohammedessam.web_growth@zohomail.com"
+               class="contact-card group flex items-center gap-4 bg-brutal-dark text-brutal-light p-4 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200">
+              <div class="w-11 h-11 bg-brutal-pink border-2 border-brutal-light flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-envelope text-white text-lg"></i>
+              </div>
+              <div>
+                <span class="block font-mono text-xs text-brutal-light/40 uppercase tracking-wider">Email</span>
+                <span class="block font-grotesk font-semibold text-sm text-brutal-pink group-hover:text-brutal-yellow transition-colors duration-200 break-all">mohammedessam.web_growth@zohomail.com</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/201018923563" target="_blank" rel="noopener noreferrer"
+               class="contact-card group flex items-center gap-4 bg-brutal-dark text-brutal-light p-4 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200">
+              <div class="w-11 h-11 bg-brutal-green border-2 border-brutal-light flex items-center justify-center flex-shrink-0">
+                <i class="fab fa-whatsapp text-brutal-dark text-xl"></i>
+              </div>
+              <div>
+                <span class="block font-mono text-xs text-brutal-light/40 uppercase tracking-wider">WhatsApp</span>
+                <span class="block font-grotesk font-semibold text-brutal-green group-hover:text-brutal-yellow transition-colors duration-200">+20 101 892 3563</span>
+              </div>
+            </a>
+
+            <div class="contact-card flex items-center gap-4 bg-brutal-dark text-brutal-light p-4 border-4 border-brutal-dark shadow-brutal cursor-default">
+              <div class="w-11 h-11 bg-brutal-cyan border-2 border-brutal-light flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-brutal-dark text-lg"></i>
+              </div>
+              <div>
+                <span class="block font-mono text-xs text-brutal-light/40 uppercase tracking-wider">Location</span>
+                <span class="block font-grotesk font-semibold text-brutal-cyan">Giza, Egypt 🇪🇬</span>
+              </div>
+            </div>
+
+            <a href="https://linktr.ee/Mohammed_Essam1" target="_blank" rel="noopener noreferrer"
+               class="contact-card group flex items-center gap-4 bg-brutal-yellow text-brutal-dark p-4 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200">
+              <div class="w-11 h-11 bg-brutal-dark border-2 border-brutal-dark flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-link text-brutal-yellow text-lg"></i>
+              </div>
+              <div>
+                <span class="block font-mono text-xs text-brutal-dark/40 uppercase tracking-wider">All Links</span>
+                <span class="block font-grotesk font-bold text-brutal-dark group-hover:text-brutal-orange transition-colors duration-200">linktr.ee/Mohammed_Essam1</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- ── Social Profiles ── -->
+          <div class="reveal-up pt-2" style="animation-delay:0.3s">
+            <div class="bg-brutal-dark border-4 border-brutal-dark p-5" style="box-shadow:5px 5px 0 0 #0A0A0A;">
+              <h4 class="font-mono font-bold text-brutal-yellow text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="fas fa-share-nodes"></i> Follow & Connect
+              </h4>
+              <div class="grid grid-cols-3 gap-2">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/mohammed-essam-younis/" target="_blank" rel="noopener noreferrer"
+                   class="social-profile-card group flex flex-col items-center gap-1.5 p-3 border-2 border-brutal-light/10 hover:border-[#0A66C2] hover:bg-[#0A66C2]/10 transition-all duration-200">
+                  <i class="fab fa-linkedin-in text-xl text-brutal-light/40 group-hover:text-[#0A66C2] transition-colors duration-200"></i>
+                  <span class="font-mono text-brutal-light/40 group-hover:text-[#0A66C2] text-xs transition-colors duration-200">LinkedIn</span>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/MohammedEssam.WebGrowth" target="_blank" rel="noopener noreferrer"
+                   class="social-profile-card group flex flex-col items-center gap-1.5 p-3 border-2 border-brutal-light/10 hover:border-[#1877F2] hover:bg-[#1877F2]/10 transition-all duration-200">
+                  <i class="fab fa-facebook-f text-xl text-brutal-light/40 group-hover:text-[#1877F2] transition-colors duration-200"></i>
+                  <span class="font-mono text-brutal-light/40 group-hover:text-[#1877F2] text-xs transition-colors duration-200">Facebook</span>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/mohammedessam_webgrowth" target="_blank" rel="noopener noreferrer"
+                   class="social-profile-card group flex flex-col items-center gap-1.5 p-3 border-2 border-brutal-light/10 hover:border-[#E1306C] hover:bg-[#E1306C]/10 transition-all duration-200">
+                  <i class="fab fa-instagram text-xl text-brutal-light/40 group-hover:text-[#E1306C] transition-colors duration-200"></i>
+                  <span class="font-mono text-brutal-light/40 group-hover:text-[#E1306C] text-xs transition-colors duration-200">Instagram</span>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@MohammedEssamWebGrowth" target="_blank" rel="noopener noreferrer"
+                   class="social-profile-card group flex flex-col items-center gap-1.5 p-3 border-2 border-brutal-light/10 hover:border-[#FF0000] hover:bg-[#FF0000]/10 transition-all duration-200">
+                  <i class="fab fa-youtube text-xl text-brutal-light/40 group-hover:text-[#FF0000] transition-colors duration-200"></i>
+                  <span class="font-mono text-brutal-light/40 group-hover:text-[#FF0000] text-xs transition-colors duration-200">YouTube</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/mohammedessam1-tech" target="_blank" rel="noopener noreferrer"
+                   class="social-profile-card group flex flex-col items-center gap-1.5 p-3 border-2 border-brutal-light/10 hover:border-brutal-light hover:bg-brutal-light/10 transition-all duration-200">
+                  <i class="fab fa-github text-xl text-brutal-light/40 group-hover:text-brutal-light transition-colors duration-200"></i>
+                  <span class="font-mono text-brutal-light/40 group-hover:text-brutal-light text-xs transition-colors duration-200">GitHub</span>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@mohammedessam.web_growth" target="_blank" rel="noopener noreferrer"
+                   class="social-profile-card group flex flex-col items-center gap-1.5 p-3 border-2 border-brutal-light/10 hover:border-brutal-light hover:bg-brutal-light/10 transition-all duration-200">
+                  <i class="fab fa-tiktok text-xl text-brutal-light/40 group-hover:text-brutal-light transition-colors duration-200"></i>
+                  <span class="font-mono text-brutal-light/40 group-hover:text-brutal-light text-xs transition-colors duration-200">TikTok</span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact form -->
+        <div class="lg:col-span-3">
+          <div class="reveal-right" style="animation-delay:0.2s">
+            <div class="relative bg-brutal-dark border-4 border-brutal-dark p-8 md:p-10">
+              <!-- Stacked shadow -->
+              <div class="absolute -bottom-3 -right-3 w-full h-full bg-brutal-pink border-4 border-brutal-dark -z-10"></div>
+
+              <h3 class="font-mono font-bold text-brutal-light text-xl mb-6 flex items-center gap-3">
+                <i class="fas fa-paper-plane text-brutal-yellow"></i>
+                Send a Message
+              </h3>
+
+              <form id="contact-form" class="space-y-5" novalidate>
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div class="form-group">
+                    <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Your Name *</label>
+                    <input type="text" name="name" id="inp-name" required
+                           class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20"
+                           placeholder="Mohammed..." />
+                    <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Email Address *</label>
+                    <input type="email" name="email" id="inp-email" required
+                           class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20"
+                           placeholder="you@example.com" />
+                    <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Subject *</label>
+                  <input type="text" name="subject" id="inp-subject" required
+                         class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20"
+                         placeholder="Project Inquiry..." />
+                  <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Service Interested In</label>
+                  <select name="service" id="inp-service"
+                          class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200">
+                    <option value="">Select a service...</option>
+                    <option value="shopify">Shopify Store</option>
+                    <option value="wordpress">WordPress Website</option>
+                    <option value="social_media">Social Media Management</option>
+                    <option value="ecommerce">E-commerce Setup</option>
+                    <option value="ai_tools">AI Tools Integration</option>
+                    <option value="no_code">No-Code Development</option>
+                    <option value="content">Content Creation</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="block font-mono text-xs text-brutal-light/50 uppercase tracking-wider mb-2">Your Message *</label>
+                  <textarea name="message" id="inp-message" required rows="5"
+                            class="w-full bg-brutal-gray text-brutal-light border-2 border-brutal-light/20 focus:border-brutal-yellow outline-none px-4 py-3 font-grotesk text-sm transition-all duration-200 placeholder:text-brutal-light/20 resize-none"
+                            placeholder="Tell me about your project..."></textarea>
+                  <span class="form-error hidden text-brutal-pink text-xs font-mono mt-1 block"></span>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" id="submit-btn"
+                        class="w-full group relative flex items-center justify-center gap-3 bg-brutal-yellow text-brutal-dark font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 border-4 border-brutal-dark shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all duration-200 overflow-hidden">
+                  <span id="btn-text" class="relative z-10 flex items-center gap-3">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                  </span>
+                  <div class="absolute inset-0 bg-brutal-orange opacity-0 group-hover:opacity-20 transition-opacity duration-200"></div>
+                </button>
+
+                <!-- Success/Error message -->
+                <div id="form-status" class="hidden font-mono text-sm text-center py-3 border-2"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="bg-brutal-dark border-t-4 border-brutal-yellow py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+
+        <!-- Brand -->
+        <div>
+          <a href="#hero" class="inline-flex items-center gap-3 mb-3">
+            <span class="font-mono font-bold text-2xl text-brutal-yellow border-2 border-brutal-yellow px-3 py-1">ME</span>
+            <div>
+              <p class="font-mono font-bold text-brutal-light text-sm">Mohammed Essam</p>
+              <p class="font-mono text-xs text-brutal-light/40">Digital Operations & Growth Specialist</p>
+            </div>
+          </a>
+          <p class="font-grotesk text-brutal-light/40 text-xs max-w-xs mt-2">Building impactful digital experiences from Giza, Egypt. Available worldwide.</p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="text-center hidden md:block">
+          <div class="flex flex-wrap justify-center gap-4 font-mono text-xs uppercase tracking-wider">
+            <a href="#about"      class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">About</a>
+            <a href="#experience" class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">Experience</a>
+            <a href="#portfolio"   class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">Works</a>
+            <a href="#skills"     class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">Skills</a>
+            <a href="#upcoming"   class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">Coming Soon</a>
+            <a href="#education"  class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">Credentials</a>
+            <a href="#contact"    class="text-brutal-light/40 hover:text-brutal-yellow transition-colors duration-200">Contact</a>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="flex flex-wrap justify-start md:justify-end items-center gap-2">
+          <a href="https://www.linkedin.com/in/mohammed-essam-younis/" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-[#0A66C2] hover:text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-all duration-200">
+            <i class="fab fa-linkedin-in text-sm"></i>
+          </a>
+          <a href="https://www.facebook.com/MohammedEssam.WebGrowth" target="_blank" rel="noopener noreferrer" title="Facebook"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-[#1877F2] hover:text-[#1877F2] hover:bg-[#1877F2]/10 transition-all duration-200">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="https://www.instagram.com/mohammedessam_webgrowth" target="_blank" rel="noopener noreferrer" title="Instagram"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-[#E1306C] hover:text-[#E1306C] hover:bg-[#E1306C]/10 transition-all duration-200">
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+          <a href="https://www.youtube.com/@MohammedEssamWebGrowth" target="_blank" rel="noopener noreferrer" title="YouTube"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-[#FF0000] hover:text-[#FF0000] hover:bg-[#FF0000]/10 transition-all duration-200">
+            <i class="fab fa-youtube text-sm"></i>
+          </a>
+          <a href="https://github.com/mohammedessam1-tech" target="_blank" rel="noopener noreferrer" title="GitHub"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-brutal-light hover:text-brutal-light hover:bg-brutal-light/10 transition-all duration-200">
+            <i class="fab fa-github text-sm"></i>
+          </a>
+          <a href="https://www.tiktok.com/@mohammedessam.web_growth" target="_blank" rel="noopener noreferrer" title="TikTok"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-brutal-light hover:text-brutal-light hover:bg-brutal-light/10 transition-all duration-200">
+            <i class="fab fa-tiktok text-sm"></i>
+          </a>
+          <a href="https://wa.me/201018923563" target="_blank" rel="noopener noreferrer" title="WhatsApp"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-brutal-green hover:text-brutal-green hover:bg-brutal-green/10 transition-all duration-200">
+            <i class="fab fa-whatsapp text-sm"></i>
+          </a>
+          <a href="mailto:mohammedessam.web_growth@zohomail.com" title="Email"
+             class="w-9 h-9 bg-brutal-gray border-2 border-brutal-light/20 flex items-center justify-center text-brutal-light/50 hover:border-brutal-pink hover:text-brutal-pink hover:bg-brutal-pink/10 transition-all duration-200">
+            <i class="fas fa-envelope text-sm"></i>
+          </a>
+          <a href="https://linktr.ee/Mohammed_Essam1" target="_blank" rel="noopener noreferrer" title="Linktree"
+             class="w-9 h-9 bg-brutal-yellow border-2 border-brutal-dark flex items-center justify-center text-brutal-dark hover:bg-brutal-orange transition-all duration-200">
+            <i class="fas fa-link text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-brutal-light/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="font-mono text-xs text-brutal-light/20 uppercase tracking-widest">
+          © 2025 Mohammed Essam. All rights reserved.
+        </p>
+        <p class="font-mono text-xs text-brutal-light/20 uppercase tracking-widest flex items-center gap-2">
+          <span class="w-2 h-2 bg-brutal-green rounded-full animate-pulse"></span>
+          Available for freelance
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
